@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/nav.css">
+<nav>
+    <div class="container nav__container">
+        <h1 class="text-gradient">Furqan.</h1>
+        <ul>
+            <% if (route == "home") { %>
+            <a href="/"><li class="text-gradient selected">Home</li></a>
+            <a href="/about"><li class="text-gradient">About</li></a>
+            <a href="/projects"><li class="text-gradient">Projects</li></a>
+            <a href="/contact"><li class="text-gradient">Contact</li></a>
+            <% } else if (route == "about") { %>
+            <a href="/"><li class="text-gradient">Home</li></a>
+            <a href="/about"><li class="text-gradient selected">About</li></a>
+            <a href="/projects"><li class="text-gradient">Projects</li></a>
+            <a href="/contact"><li class="text-gradient">Contact</li></a>
+            <% } else if (route == "contact") { %>
+            <a href="/"><li class="text-gradient">Home</li></a>
+            <a href="/about"><li class="text-gradient">About</li></a>
+            <a href="/projects"><li class="text-gradient">Projects</li></a>
+            <a href="/contact"><li class="text-gradient selected">Contact</li></a>
+            <% } else { %>
+            
+            <a href="/"><li class="text-gradient">Home</li></a>
+            <a href="/about"><li class="text-gradient">About</li></a>
+            <a href="/projects"><li class="text-gradient selected">Projects</li></a>
+            <a href="/contact"><li class="text-gradient">Contact</li></a>
+            <% } %>
+        </ul>
+    </div>
+</nav>

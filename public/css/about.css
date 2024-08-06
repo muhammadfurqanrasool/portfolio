@@ -1,0 +1,72 @@
+.about {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+}
+.about__container .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.about__container .wrapper .content h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.skills {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: linear-gradient(to bottom left, rgba(255,255,255,0.1), transparent);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+.skills__wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills .loader {
+    height: 1rem;
+    margin: 6px 0;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: flex-start;
+}
+
+ .loader .loading {
+    height: 0.5rem;
+    background-color: black;
+    width: 80%;
+    border-radius: 1rem;
+ }
+
+ #frontend .loading {
+    width: 90%;
+ }
+ #react .loading {
+    width: 70%;
+ }
+ #backend .loading {
+    width: 75%;
+ }
+ #mongodb .loading {
+    width: 80%;
+ }
+ #firebase .loading {
+    width: 60%;
+ }
+
+ @media screen and (max-width: 664px) {
+    .about__container p {
+        text-align: center;
+    }
+ }

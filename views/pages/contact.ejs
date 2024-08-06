@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="shortcut icon" href="/assets/logo2.png" type="image/x-icon">
+    <title>PortFolio | Contact</title>
+</head>
+<body>
+    <%- include("../partials/nav" , {route: "contact"}) %>
+    <section class="contact">
+        <div class="container contact__container">
+            <div class="wrapper">
+                <div class="contact__left">
+                    <h1>Get in Touch</h1> 
+                    <div class="content">
+                        <p>You can contact me on my social media accounts:
+                        </p>   
+                        <ul>
+                            <a target="_blank" href="https://instagram.com/_random._.136"><li>Instagram -></li></a>
+                            <a href="https://www.facebook.com/profile.php?id=100069632831154&mibextid=ZbWKwL"
+                                target="_blank"><li>Facebook -></li></a>
+                            <a href="mailto:muhammadfurqanrasool@gmail.com" target="_blank"><li>Gmail -></li></a>
+                            <a href="https://wa.me/+923421803495" target="_blank"><li>WhatsApp -></li></a>
+                        </ul>
+                    </div>
+    
+    
+                </div>
+                <div class="contact__right">
+                    <form action="/form/submit" method="post">
+                        <input type="text" required name="fullName" placeholder="Your Full Name">
+                        <input type="email" required name="email" placeholder="Your Email">
+                        <input type="number" required name="phoneNumber" placeholder="Your Phone Number">
+                        <textarea name="message" required id="message" placeholder="Your Message..." rows="8" ></textarea>
+                        <input type="submit" value="Continue ->" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

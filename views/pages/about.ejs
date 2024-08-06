@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="shortcut icon" href="/assets/logo2.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PortFolio | About</title>
+</head>
+<body>
+    <%- include("../partials/nav" , {route: "about"}) %>
+    <section class="about">
+        <div class="container about__container">
+            <div class="wrapper">
+
+                <div class="content">
+                    <h1 class="text-gradient-no">About me</h1>
+                <p>I'm a passionate Full-Stack Web Developer with a knack for turning complex challenges into elegant, user-friendly solutions.
+                    I have over 2 years of experience in the web development, specializing in creating dynamic, responsive websites and applications.
+                    I’ve worked with a variety of technologies including React, Node.js, and Python. I’m adept at both crafting engaging user interfaces and developing scalable backend systems.
+                </p>
+                </div>
+
+                <div class="skills">
+                    <h1 class="text-gradient-no">Skills I Have</h1>
+                    <div class="skills__wrapper">
+
+                        
+                        
+                        <div><label for="frontend">HTML, CSS, JS</label>
+                            <div class="loader" id="frontend"><div class="loading"></div></div></div>
+                        
+                        
+                            <div><label for="react">ReactJS, EJS</label>
+                            <div class="loader" id="react"><div class="loading"></div></div></div>
+                       
+                            <div>
+                        <label for="backend">NodeJS, ExpressJS</label>
+                        <div class="loader" id="backend"><div class="loading"></div></div>
+                       </div>
+                            <div>
+                        <label for="mongodb">MongoDB</label>
+                        <div class="loader" id="mongodb"><div class="loading"></div></div>
+                       </div>
+                            <div>
+                        <label for="firebase">Firebase</label>
+                        <div class="loader" id="firebase"><div class="loading"></div></div>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+    </section>
+</body>
+</html>

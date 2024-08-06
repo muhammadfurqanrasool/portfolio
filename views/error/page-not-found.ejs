@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="page-not-found error">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Error 404!</title>
+</head>
+<body>
+    <section class="error error-404">
+        <h1>Error 404!</h1>
+        <h2>Page not found.</h2>
+        <a href="/"><- Back to Home</a>
+    </section>
+
+
+    
+</body>
+
+<style>
+    .error{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        /* align-items: center; */
+        padding-left: 10%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        /* text-align: left; */
+    }
+    .error h1, h2 {
+        font-size: 50px;
+    }
+    .error a {
+        text-decoration: underline;
+        font-size: 30px;
+        /* margin-top: 1rem; */
+    }
+
+    @media screen and (max-width: 1024px) {
+        .error h1,h2 {
+            font-size: 30px;
+        }
+        .error a {
+            font-size: 25px;
+        }
+    }
+</style>
+</html>
